@@ -12,6 +12,7 @@ public class Main {
           list.getLast();
           list.removeFirst();
           list.addFirst(8);
+          list.removeLast();
     }
 
 }

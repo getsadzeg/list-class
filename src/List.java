@@ -1,7 +1,7 @@
 
 package list;
 
-
+// All commented codes are for testing.
 public class List {
     private int[] list = new int[100];
     private int element;
@@ -63,9 +63,9 @@ public class List {
             list[i] = list[i-1];
             }
             list[0] = element;
-            /*for(int i=0; i<list.length; i++) {
+            for(int i=0; i<list.length; i++) {
                 System.out.println(list[i]);
-            }*/
+            }
     }
     public void getFirst() {
         for(int i=0; i<list.length; i++) {
@@ -87,6 +87,13 @@ public class List {
             list[i] = list[i+1];
             //System.out.println(list[i]);
         }
+         
+    }
+    public void removeLast() {
+        //list[list.length-1] = 19;
+        //System.out.println("Current value: " + list[list.length-1]);
+        list[list.length-1] = 0;
+        //System.out.println("After method: " + list[list.length-1]);
     }
 
     public int getElement() {
