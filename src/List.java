@@ -3,14 +3,16 @@ package list;
 
 // All commented codes are for testing.
 public class List {
-    private int[] list = new int[100];
+    public final int size;
+    private int[] list;
     private int element;
     private int p = 0;
     private int k = 0;
     private int clone = 0;
     private int index = 0;
-     public List() {
-         
+     public List(int size) {
+         this.size = size;
+         list = new int[size];
      }
     public int[] getList() {
         return list;
@@ -18,6 +20,7 @@ public class List {
 
     public void setList(int[] list) {
         this.list = list;
+        
     }
     public void addLast(int element) {
         for(int i=0; i<list.length; i++) {
@@ -63,9 +66,9 @@ public class List {
             list[i] = list[i-1];
             }
             list[0] = element;
-            for(int i=0; i<list.length; i++) {
+            /*for(int i=0; i<list.length; i++) {
                 System.out.println(list[i]);
-            }
+            }*/
     }
     public void getFirst() {
         for(int i=0; i<list.length; i++) {
