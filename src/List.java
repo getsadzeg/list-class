@@ -5,7 +5,6 @@ package list;
 public class List {
     public final int size;
     private int[] list;
-    private int element;
     private int p = 0;
     private int k = 0;
     private int clone = 0;
@@ -56,7 +55,6 @@ public class List {
             else System.out.println("Last element: " + list[index]);
     }
     public void addFirst(int element) {
-        int first = element;
             for(int i=0; i<list.length; i++) {
             if(p!=0) {
                 index = i;
@@ -97,13 +95,5 @@ public class List {
         //System.out.println("Current value: " + list[list.length-1]);
         list[list.length-1] = 0;
         //System.out.println("After method: " + list[list.length-1]);
-    }
-
-    public int getElement() {
-        return element;
-    }
-
-    public void setElement(int element) {
-        this.element = element;
     }
 }
