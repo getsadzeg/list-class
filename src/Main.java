@@ -11,7 +11,7 @@ public class Main {
           list.addLast(6);
           list.getLast();
           list.removeFirst();
-          list.addFirst(8);
+          list.addFirst(11);
           list.removeLast();
     }
 

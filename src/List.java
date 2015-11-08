@@ -4,6 +4,7 @@ package list;
 // All commented codes are for testing.
 public class List {
     public final int size;
+    //boolean isUsed;
     private int[] list;
     private int p = 0;
     private int k = 0;
@@ -42,24 +43,24 @@ public class List {
     }
     
     public void getLast() {
-        clone = p;
         for(int i=0; i<list.length; i++) {
-            p = list[i];
             if(p!=0) {
-                clone = p;
+                p = list[i];
                 index = i;
             }
             
         }
-        if(clone == 0) System.out.println("No elements");
-            else System.out.println("Last element: " + list[index]);
+        System.out.println("Last element: " + list[index]);
     }
+    
+    
     public void addFirst(int element) {
-            for(int i=0; i<list.length; i++) {
+            
+            /*for(int i=0; i<list.length; i++) {
             if(p!=0) {
                 index = i;
             }
-            }
+            }*/
             for(int i = index+1; i > 0; i--) {
             list[i] = list[i-1];
             }
@@ -69,14 +70,7 @@ public class List {
             }*/
     }
     public void getFirst() {
-        for(int i=0; i<list.length; i++) {
-            p = list[i];
-            if(p!=0) {
-                clone = p;
-            }
-        }
-        if(clone == 0) System.out.println("No elements");
-            else System.out.println("First element: " + list[0]);
+            System.out.println("First element: " + list[0]);
     }
     public void removeFirst() {
        /* System.out.println("First print:");
