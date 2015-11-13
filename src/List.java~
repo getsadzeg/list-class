@@ -1,4 +1,6 @@
 
+package list;
+
 // All commented codes are for testing.
 public class List {
     public final int size;
