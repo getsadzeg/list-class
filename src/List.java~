@@ -42,8 +42,8 @@ public class List {
     
     public void getLast() {
         for(int i=0; i<list.length; i++) {
-            p = list[i];
             if(p!=0) {
+                p = list[i];
                 index = i;
             }
             
