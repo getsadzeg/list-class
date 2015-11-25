@@ -1,4 +1,6 @@
 
+package src; 
+
 // All commented codes are for testing.
 public class List {
     public final int size;
@@ -12,8 +14,10 @@ public class List {
          this.size = size;
          list = new int[size];
      }
-    public int[] getList() {
-        return list;
+    public void getValues() {
+        for(int i=0; i<list.length; i++) {
+            System.out.println(list[i]);
+        }
     }
 
     public void setList(int[] list) {
