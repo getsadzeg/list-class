@@ -1,5 +1,5 @@
 
-package list; //won't forget to change this
+package src;
 
 
 public class Main {

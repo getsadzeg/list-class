@@ -1,10 +1,9 @@
 
-package list; //won't forget to change this
+package src;
 
 // All commented codes are for testing.
 public class List implements ListServices {
     public final int size;
-    //boolean isUsed;
     private int[] list;
     private int p = 0;
     private int k = 0;
