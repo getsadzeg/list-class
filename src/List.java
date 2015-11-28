@@ -1,8 +1,8 @@
 
-package src; 
+package list; //won't forget to change this
 
 // All commented codes are for testing.
-public class List {
+public class List implements ListServices {
     public final int size;
     //boolean isUsed;
     private int[] list;
@@ -14,6 +14,7 @@ public class List {
          this.size = size;
          list = new int[size];
      }
+     @Override
     public void getValues() {
         for(int i=0; i<list.length; i++) {
             System.out.println(list[i]);
@@ -24,6 +25,7 @@ public class List {
         this.list = list;
         
     }
+    @Override
     public void addLast(int element) {
         for(int i=0; i<list.length; i++) {
             p = list[i];
@@ -43,7 +45,7 @@ public class List {
             System.out.println("element is " + list[i]);
         }*/
     }
-    
+    @Override
     public void getLast() {
         for(int i=0; i<list.length; i++) {
             p = list[i];
@@ -55,7 +57,7 @@ public class List {
         System.out.println("Last element: " + list[index]);
     }
     
-    
+    @Override
     public void addFirst(int element) {
             
             /*for(int i=0; i<list.length; i++) {
@@ -71,9 +73,11 @@ public class List {
                 System.out.println(list[i]);
             }*/
     }
+    @Override
     public void getFirst() {
             System.out.println("First element: " + list[0]);
     }
+    @Override
     public void removeFirst() {
        /* System.out.println("First print:");
         for(int i=0; i<list.length; i++) {
@@ -86,6 +90,7 @@ public class List {
         }
          
     }
+    @Override
     public void removeLast() {
         //list[list.length-1] = 19;
         //System.out.println("Current value: " + list[list.length-1]);
