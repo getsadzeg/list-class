@@ -13,7 +13,7 @@ public class List implements ListServices {
          this.size = size;
          list = new int[size];
      }
-     @Override
+    @Override
     public void getValues() {
         for(int i=0; i<list.length; i++) {
             System.out.println(list[i]);
@@ -35,9 +35,6 @@ public class List implements ListServices {
             }
              
         }
-       System.out.println("clone: " + clone);
-       System.out.println("index: " + index);
-        System.out.println(k);
         if(clone == 0) list[0] = element;
         else list[index+1] = element;
         /*for(int i=0; i<list.length; i++) {
@@ -78,11 +75,6 @@ public class List implements ListServices {
     }
     @Override
     public void removeFirst() {
-       /* System.out.println("First print:");
-        for(int i=0; i<list.length; i++) {
-            System.out.println(list[i]);
-        }
-        System.out.println("Second print:");*/
         for(int i=0; i<list.length-1; i++) {
             list[i] = list[i+1];
             //System.out.println(list[i]);
@@ -91,9 +83,6 @@ public class List implements ListServices {
     }
     @Override
     public void removeLast() {
-        //list[list.length-1] = 19;
-        //System.out.println("Current value: " + list[list.length-1]);
         list[list.length-1] = 0;
-        //System.out.println("After method: " + list[list.length-1]);
     }
 }
