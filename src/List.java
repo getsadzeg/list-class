@@ -42,7 +42,7 @@ public class List implements ListServices {
         }*/
     }
     @Override
-    public void getLast() {
+    public int getLast() {
         for(int i=0; i<list.length; i++) {
             p = list[i];
             if(p!=0) {
@@ -50,7 +50,7 @@ public class List implements ListServices {
             }
             
         }
-        System.out.println("Last element: " + list[index]);
+        return list[index];
     }
     
     @Override
@@ -70,8 +70,8 @@ public class List implements ListServices {
             }*/
     }
     @Override
-    public void getFirst() {
-            System.out.println("First element: " + list[0]);
+    public int getFirst() {
+            return list[0];
     }
     @Override
     public void removeFirst() {
