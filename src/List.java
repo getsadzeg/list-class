@@ -16,7 +16,8 @@ public class List implements ListServices {
     @Override
     public void getValues() {
         for(int i=0; i<list.length; i++) {
-            System.out.println(list[i]);
+            if(list[i] == 0) continue;
+            else System.out.println(list[i]);
         }
     }
 
