@@ -1,5 +1,6 @@
 # About
-A bit slower, but less memory-using tiny data structure similar of List. At the moment, class only works with integers.
+list-class is tiny data structure similar of List. It's a bit slower, but uses less memory than speed-optimized version.
+At the moment, class only works with integers.
 
 # Usage
 Just clone repository with 
@@ -7,10 +8,10 @@ Just clone repository with
 ```
 git clone https://github.com/getsadzeg/list-class.git
 ```
-Now copy package named 'src' to your project and access it's classes via:
+Now copy folder named 'list' to your project and access it's classes via:
 
 ```java
-import src.*;
+import list.lib.*;
 ```
 
 After that you can create List object(More is defined in Main.java):
