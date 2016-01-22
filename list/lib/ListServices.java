@@ -1,5 +1,5 @@
 
-package src;
+package list.lib;
 
 
 public interface ListServices {

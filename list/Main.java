@@ -1,6 +1,6 @@
 
-package src;
-
+package list;
+import list.lib.*;
 
 public class Main {
     public static void main(String[] args) {
