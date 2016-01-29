@@ -1,6 +1,15 @@
 # About
-list-class is tiny data structure similar of List. It's a bit slower, but uses less memory than speed-optimized version.
+list-class is tiny data structure similar of ArrayList. It's a bit slower, but uses less memory than speed-optimized version.
 At the moment, class only works with integers.
+
+What can you do with list-class:
+- Get values of your list in O(n) time.
+- Add an element to the last in O(n) time.
+- Get an element from the last in O(n) time.
+- Add an element to the first.
+- Get an element from the first in O(1) time.
+- Remove element from the first in O(n) time.
+- Remove element from the last in O(1) time.
 
 # Usage
 Just clone repository with 
