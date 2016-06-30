@@ -1,8 +1,8 @@
 # About
-list-class is tiny data structure similar of ArrayList. It's a bit slower, but uses less memory than speed-optimized version.
+``list-class`` is tiny data structure similar of ArrayDeque. It's a bit slower, but uses less memory than speed-optimized version.
 At the moment, class only works with integers.
 
-What can you do with list-class:
+What can you do with ``list-class``:
 - Get values of your list in O(n) time.
 - Add an element to the last in O(n) time.
 - Get an element from the last in O(n) time.
@@ -23,7 +23,7 @@ Now copy folder named 'list' to your project and access it's classes via:
 import list.lib.*;
 ```
 
-After that you can create List object(More is defined in Main.java):
+After that you can create List object(more is demonstrated in Main.java):
 
 ```java
 List list = new List(100);
