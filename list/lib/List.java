@@ -2,7 +2,7 @@
 package list.lib;
 
 // All commented codes are for testing.
-public class List implements ListServices {
+public class List implements ListInterface {
     public final int size;
     private int[] list;
     private int p = 0;

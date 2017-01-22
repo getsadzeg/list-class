@@ -2,7 +2,7 @@
 package list.lib;
 
 
-public interface ListServices {
+public interface ListInterface {
     public void getValues();
     public void addLast(int element);
     public int getLast();
