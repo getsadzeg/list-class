@@ -1,5 +1,5 @@
 # About
-``list-class`` is tiny data structure similar of ArrayDeque. It's a bit slower, but uses less memory than speed-optimized version.
+``list-class`` is tiny data structure similar to ArrayDeque. It's a bit slower, but uses less memory than speed-optimized version.
 At the moment, class only works with integers.
 
 What can you do with ``list-class``:
@@ -29,6 +29,6 @@ After that you can create List object(more is demonstrated in Main.java):
 List list = new List(100);
 ```
 
-#Feel free to fork
+# Feel free to fork
 
 You can fork, modify and change the code under MIT license. The project contains LICENSE file to see full license description.
